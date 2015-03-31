@@ -1,27 +1,27 @@
 mysql_root_password: devpw
 
 wordpress_sites:
-  - site_name: example.dev
+  - site_name: inov8.dev
     site_hosts:
-      - example.dev
-    local_path: '../example.dev' # path targeting local project directory (relative to root/Vagrantfile)
+      - inov8.dev
+    local_path: '../inov8.dev' # path targeting local project directory (relative to root/Vagrantfile)
     user: vagrant
     group: www-data
     site_install: true
-    site_title: Example Site
+    site_title: Inov8
     admin_user: admin
     admin_password: admin
-    admin_email: admin@example.dev
+    admin_email: admin@inov8.dev
     system_cron: true
     multisite:
       enabled: false
     env:
-      wp_home: http://example.dev
-      wp_siteurl: http://example.dev/wp
+      wp_home: http://inov8.dev
+      wp_siteurl: http://inov8.dev/wp
       wp_env: development
-      db_name: example_dev
-      db_user: example_dbuser
-      db_password: example_dbpassword
+      db_name: inov8_dev
+      db_user: inov8_dbuser
+      db_password: inov8_dbpassword
 
 php_error_reporting: 'E_ALL'
 php_display_errors: 'On'

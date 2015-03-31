@@ -9,6 +9,7 @@ mail_user: smtp_user
 mail_password: smtp_password
 
 hhvm: false
+memcached: false
 
 sudoers:
   - user: admin

@@ -13,7 +13,8 @@
     - { role: php, when: not hhvm, tags: [php] }
     - { role: hhvm, when: hhvm, tags: [hhvm] }
     - { role: nginx, tags: [nginx] }
-    - { role: memcached, tags: [memcached] }
+    - { role: memcached, when: memcached, tags: [memcached] }
+    - { role: redis, tags: [redis] }
     - { role: composer, tags: [composer] }
     - { role: wp-cli, tags: [wp-cli] }
     - { role: capistrano-setup, tags: [capistrano-setup], when: "'development' not in group_names" }
